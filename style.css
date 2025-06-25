@@ -1,0 +1,978 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.nav {
+  /* background-color: #000000; */
+  height: 6.4rem;
+  width: 160rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.9rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* text-decoration: none; */
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #777;
+}
+
+.btn-link:link,
+.btn-link:visited {
+  background-color: #543cc3;
+  padding: 1.6rem 2.8rem;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.6s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  background-color: #824497;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 3.6rem;
+  color: #333;
+  font-weight: 100;
+  /* display: flex;
+  align-items: center; */
+}
+
+.nav-icon {
+  font-weight: 400;
+}
+
+.nav-icon span {
+  color: red;
+}
+
+/* //////////////////////////////////// */
+
+/* SECTION HERO */
+
+/* //////////////////////////////////// */
+
+.section-hero {
+  padding: 8.5rem 0 18rem;
+}
+
+.hero {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 0 3.2rem;
+  gap: 9.6rem;
+}
+
+.hero-desctiption {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+}
+
+.hero-facts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-fact {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display: flex;
+  gap: 0.9rem;
+}
+
+.hero-fact span {
+  color: #543cc3;
+  background-color: rgba(127, 121, 198, 0.232);
+  padding: 0.05rem 0.6rem;
+  border-radius: 6px;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-hero-group {
+  margin: 4rem 0 1.5rem;
+  display: inline-flex;
+  /* So your elemets match with each other, Короче, пиши вот это чтобы всё ровно стояло */
+  gap: 1px;
+  position: relative;
+}
+
+.btn-hero {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.7rem 2rem !important;
+  border-radius: 6px 0 0 6px !important;
+  vertical-align: middle;
+}
+
+.dropdown-btn {
+  /* font-size: 1.6rem; */
+  border-radius: 0 6px 6px 0 !important;
+  background-color: #543cc3;
+  color: #fff;
+  padding: 1.7rem;
+  transition: all 0.4s;
+  border: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  background-color: #543cc3;
+  list-style: none;
+  color: white;
+  transition: all 0.4s;
+  margin-top: 0.15rem;
+}
+
+.dropdown-content li {
+  border-bottom: 1px solid #fff;
+}
+
+.dropdown-content-btn:link,
+.dropdown-content-btn:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.9rem;
+  transition: all 0.4s;
+}
+
+.dropdown-content-btn:hover,
+.dropdown-content-btn:active {
+  background-color: #824497;
+}
+
+.hero-rated-link {
+  display: inline-block;
+  cursor: pointer !important;
+  color: #191a1b;
+}
+
+.hero-end-text {
+  font-size: 1.6rem;
+}
+
+/* /////////////////////////////// */
+
+/*  SECTION STEPS */
+
+/* /////////////////////////////// */
+
+.section-steps {
+  margin: 8.5rem 0 15.5rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.step {
+  justify-self: center;
+  padding: 3rem 3rem 2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  border: solid 2px #191a1b15;
+  border-radius: 30px;
+  max-width: 30rem;
+  height: 35rem;
+}
+
+.step h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.step p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.step:nth-child(2) {
+  margin-top: 20rem;
+}
+
+.step-icon {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  color: #543cc3;
+}
+
+/* ///////////////////////////////// */
+
+/*  */
+
+/* ///////////////////////////////// */
+
+.section-powerful {
+  padding: 6.4rem 0 10.6rem;
+}
+
+.powerful-box {
+  grid-template-columns: 41fr 55fr;
+}
+
+.accordians {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.accordian-title {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.accordians ul {
+  list-style: none;
+}
+
+.accordians li {
+  border: solid 1.5px rgba(0, 0, 0, 0.11);
+  padding: 1rem 2rem;
+}
+
+.accordian {
+  align-items: center;
+  padding: 1rem 2.5rem;
+  /* so the href becomes black again */
+  color: inherit;
+  transition: all 0.5s;
+}
+
+.accordian-icon {
+  font-size: 4rem;
+}
+
+.accordian-text {
+  grid-column: 2;
+  font-size: 2rem;
+  line-height: 2;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordian input[type="radio"]:checked + label + .accordian-text {
+  max-height: 400px;
+  padding: 2rem 5rem 1rem;
+}
+
+.accordian label {
+  /* display: flex; */
+  /* align-items: center; */
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* 
+.show-accordian {
+  border-top: solid 5px #543cc3;
+}
+
+.show-accordian .accordian-text {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.show-accordian h3 {
+  font-size: 3.2rem;
+}
+
+.show-accordian .accordian {
+  transform: scale(1.1);
+  height: auto;
+  transition: all 0.5s;
+} */
+
+/* Target the label of the checked radio input */
+
+.accordian input[type="radio"]:checked + label {
+  transform: scale(1.02);
+}
+
+/* Enlarge icon, h3 and arrow when active */
+
+.accordian input[type="radio"]:checked + label .accordian-icon {
+  color: #cd2a17;
+  /* Example new color */
+  font-size: 5rem;
+  /* Increased size */
+  transition: all 0.3s ease;
+}
+
+.accordian input[type="radio"]:checked + label .heading-accordian {
+  font-size: 3rem;
+  /* Increase font size */
+  transition: font-size 0.3s ease;
+}
+
+.accordian input[type="radio"]:checked + label .accordian-arrow {
+  font-size: 4rem;
+  /* Increase arrow size */
+  transition: font-size 0.3s ease;
+}
+
+/* to get rid of text cursor (caret) that appears when you click on it */
+
+.accordian {
+  user-select: none;
+}
+
+.accordian-arrow {
+  transition: transform 0.3s ease;
+  font-size: 4rem;
+}
+
+.accordian input[type="radio"]:checked + label .accordian-arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.accordian:has(input[type="radio"]:checked) {
+  transform: scale(1.1);
+  /* This scales border and content visually */
+  margin: 1rem 0;
+}
+
+/* //////////////////////////// */
+
+/* SECTION SERVICES */
+
+/* //////////////////////////// */
+
+.section-services {
+  background-color: #efeffb;
+  padding: 9.6rem 0;
+}
+
+.services-items {
+  row-gap: 3.6rem !important;
+  column-gap: 3.6rem !important;
+}
+
+.services-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.services-heading {
+  font-size: 3.3rem;
+  color: #333;
+  margin-bottom: 1.4rem;
+}
+
+.services-item {
+  background-color: #fff;
+  padding: 1.3rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.services-item-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.services-item-text p {
+  margin-bottom: 1rem;
+}
+
+.services-item-text a:link,
+.services-item-text a:visited {
+  font-size: 2rem;
+  color: #543cc3;
+  transition: all 0.3s;
+}
+
+.services-anchor span {
+  font-size: 3rem;
+  color: #543cc3;
+}
+
+.services-anchor a:hover,
+.services-anchor a:active {
+  padding-right: 1.2rem;
+}
+
+.services-anchor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services-anchor {
+  position: absolute;
+  bottom: 1rem;
+}
+
+/* /////////////////////////// */
+
+/*  */
+
+/* ////////////////////////// */
+
+.testimonial-slider {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  margin: 6rem 0;
+  max-width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.4s ease;
+  padding: 2rem 0;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  flex: 0 0 60vw;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 8px;
+}
+
+.testimonial-dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.testimonial-dots .dot.active {
+  background: #5d3fff;
+}
+
+.testimonial-card img {
+  width: 70%;
+  text-align: center;
+  padding: 2rem 0;
+  justify-self: center;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: #543cc3;
+  line-height: 1.4;
+}
+
+.testimonial-comment {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.testimonial-card div {
+  padding: 2rem;
+}
+
+/* /////////////////////////// */
+
+/* Section download */
+
+/* ////////////////////////// */
+
+.section-download {
+  padding: 9.6rem 0;
+}
+
+.download-header h3 {
+  margin-bottom: 6rem;
+  font-size: 3.3rem;
+}
+
+.download-header h3 {
+  margin-bottom: 6rem;
+  font-size: 3.3rem;
+}
+
+.download-list {
+  list-style: none;
+  justify-self: center;
+}
+
+.download-link {
+  display: block;
+  transition: all 0.3s;
+  padding: 3.3rem 4.5rem;
+}
+
+.download-link {
+  border: 2px solid #00000026;
+  padding: 3.3rem 4.5rem;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.download-link:hover,
+.download-link:active {
+  border: 2px solid #543cc3;
+  padding: 3.3rem 4.5rem;
+  border-radius: 10px;
+}
+
+.download-link:hover,
+.download-link:active .download-list-icon {
+  color: #543cc3;
+}
+
+.download-list-icon {
+  font-size: 7rem;
+  justify-self: center;
+  margin-bottom: 2.5rem;
+  /* color: #333; */
+  color: inherit;
+}
+
+.download-item h4 {
+  font-size: 1.8rem;
+  color: inherit;
+  justify-self: center;
+}
+
+.download-link.selected {
+  border: 2px solid #543cc3;
+  color: #543cc3;
+}
+
+.download-link.selected .download-list-icon {
+  color: #543cc3;
+  border: 2px solid #543cc3;
+}
+
+.download-radio:checked + .download-link {
+  border: 2px solid #543cc3;
+  color: #543cc3;
+}
+
+.download-radio:checked + .download-link .download-list-icon {
+  color: #543cc3;
+}
+
+.download-link {
+  user-select: none;
+  margin-bottom: 3rem;
+}
+
+.download-text {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.download-button {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.download-feature span {
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.feature-container {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  gap: 0.8rem;
+  color: #333;
+}
+
+.check-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0.15rem solid #6c4ce0;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #6c4ce0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.info-sections {
+  display: flex;
+  justify-content: center;
+  /* Align to the left */
+  align-items: flex-start;
+  gap: 8rem;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.section-title {
+  color: #6c4ce0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+/* Larger bullets and spacing between lines */
+
+.info-box ul {
+  list-style-type: disc;
+  padding-left: 2.2rem;
+  margin: 0;
+}
+
+.info-box li {
+  margin-bottom: 1.6rem;
+}
+
+/* More row gap
+
+/* Bigger bullet points */
+
+.info-box ul li::marker {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.info-sections a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.info-sections a:hover,
+.info-sections a:active {
+  color: #144483;
+}
+
+/* /////////////////////////// */
+
+/* Section TOUR */
+
+/* /////////////////////////// */
+
+.section-tour {
+  background-color: #efeffb;
+  padding: 8rem 0;
+}
+
+.section-tour h2 {
+  font-size: 3.5rem;
+}
+
+.section-tour-icon {
+  font-size: 6rem;
+  padding: 0rem 3rem 3rem 0rem;
+  transition: all 0.3s;
+  color: #543cc3;
+}
+
+.tour-text {
+  margin-bottom: 3.5rem;
+  padding: 0 5rem 0 0;
+  justify-content: center;
+}
+
+.section-tour-icon:hover {
+  color: #cd2a17;
+}
+
+.tour-text .hero-desctiption {
+  justify-content: center;
+}
+
+.accordian-final {
+  margin-top: 6rem;
+  width: 60%;
+  justify-self: center;
+}
+
+.accordian-final-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.accordian-final-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.2rem 1.6rem;
+  background: #ffffff22;
+  color: #635bff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.accordian-final-item.open .accordian-final-header {
+  background: #635bff;
+  color: #fff;
+}
+
+.accordian-final-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.accordian-final-item.open .accordian-final-icon {
+  transform: rotate(-135deg);
+}
+
+.accordian-final-body {
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0 1.6rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordian-final-item.open .accordian-final-body {
+  padding: 1.2rem 1.6rem;
+  max-height: 20rem;
+  /* Adjust if your content is larger */
+}
+
+.accordian-final-body p {
+  margin-bottom: 0;
+}
+
+.resource-tab {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  margin-right: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.resource-tab.active {
+  background: #1e1c3b;
+  color: #fff;
+}
+
+.resource-box {
+  display: none;
+  margin-top: 20px;
+}
+
+.resource-box.show {
+  display: block;
+}
+
+.resource-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+/* ////////////////// */
+
+/* ///////////////////////////// */
+
+/* FOOTER */
+
+/* ///////////////////////////// */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+/* grid: 4 columns */
+
+.grid--footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
+/* Brand column */
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-desc {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: auto;
+}
+
+/* Column headings */
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #111;
+}
+
+/* Nav lists */
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #555;
+}
+
+/* Bottom row */
+
+.footer__bottom {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+/* Ionicon styling (if you’re using ionicons) */
+
+.ion-icon {
+  font-size: 2.4rem;
+  color: #635bff;
+}
+
+.company {
+  grid-column: 2/3;
+}
+
+.logo-col .main-icon {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer .grid--footer {
+  padding: 0 0 0 8rem;
+}
